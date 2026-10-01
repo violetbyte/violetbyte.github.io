@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ishika Singh | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <span class="logo">VioletByte</span>
+  <div class="nav-links">
+    <a href="#projects">projects</a>
+    <a href="#terminal">terminal</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1><span class="prompt">&gt;</span> Ishika Singh</h1>
+      <p class="subtitle">CSE Student · Focused on Real-World Tech</p>
+      <p class="tagline">I build logic-driven systems, not just projects.</p>
+      <a href="resume.pdf" class="resume-btn" target="_blank">resume.pdf</a>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>&gt; about</h2>
+  <p>
+  I’m a second-year Computer Science student who
+  enjoys turning ideas into working software.
+  My foundation is in C, Python, JavaScript, data structures, and databases, 
+  and I’m currently expanding into React and modern frontend development.I learn through 
+  building — whether it’s a hackathon project, an open-source contribution,
+  or a product I’m developing with a team. I care about clean structure, 
+  practical solutions, and creating software that is genuinely useful.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>&gt; skills</h2>
+  <div class="skills-grid">
+    <div class="skill-block">
+      <h3>Languages</h3>
+      <p>C, Python, JavaScript</p>
+    </div>
+    <div class="skill-block">
+      <h3>Web</h3>
+      <p>HTML, CSS, DOM, Responsive UI</p>
+    </div>
+    <div class="skill-block">
+      <h3>Systems</h3>
+      <p>Linux basics, Shell, Process concepts</p>
+    </div>
+    <div class="skill-block">
+      <h3>Tools</h3>
+      <p>Git, GitHub, VS Code</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>&gt; projects</h2>
+
+  <div class="project-grid">
+
+    <!-- PredictifyME -->
+    <div class="project-card">
+      <h3>PredictifyME</h3>
+      <p class="short">Stress &amp; productivity platform</p>
+
+      <div class="project-preview">
+        <img src="predictifyme.jpeg" alt="PredictifyME demo">
+      </div>
+
+      <div class="details">
+        <p>
+          A product concept focused on analyzing stress and productivity
+          patterns and providing timely user support.
+        </p>
+
+        <ul>
+          <li>Original product idea</li>
+          <li>Team leadership</li>
+          <li>Frontend development</li>
+        </ul>
+
+        <span class="tech">HTML · CSS · JavaScript</span>
+      </div>
+    </div>
+
+
+    <!-- Global Fusion Engine -->
+    <div class="project-card">
+      <h3>Global Fusion Engine</h3>
+      <p class="short">NASA Space Apps Challenge 2025</p>
+
+      <div class="project-preview">
+        <img src="system overview.jpeg" alt="Global Fusion Engine project">
+      </div>
+
+      <div class="details">
+        <p>
+          A satellite-risk aggregation system developed during NASA Space
+          Apps Challenge 2025.
+        </p>
+
+        <ul>
+          <li>Team Lead</li>
+          <li>Database management</li>
+          <li>API development</li>
+        </ul>
+
+        <span class="tech">Database · APIs · Backend</span>
+      </div>
+    </div>
+
+
+    <!-- Disaster Risk Detection Platform -->
+    <div class="project-card">
+      <h3>Disaster Risk Detection Platform</h3>
+      <p class="short">Ongoing team project</p>
+
+      <div class="project-preview">
+  <div class="project-placeholder">Project preview coming soon</div>
+      </div>
+
+      <div class="details">
+        <p>
+          A web platform exploring disaster-risk detection using weather
+          patterns and geological and satellite data.
+        </p>
+
+        <ul>
+          <li>Frontend Developer</li>
+          <li>Laptop-first web application</li>
+          <li>Responsive web development</li>
+        </ul>
+
+        <span class="tech">HTML · CSS · JavaScript · React</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="timeline">
+  <h2>&gt; timeline</h2>
+  <div class="timeline-box">
+    <input type="range" min="0" max="3" step="1" value="0" id="timelineSlider" />
+    <div class="timeline-output" id="timelineOutput"></div>
+  </div>
+</section>
+
+<section id="terminal" class="terminal">
+  <h2>&gt; terminal — type <span class="prompt">help</span></h2>
+  <p class="terminal-desc">
+    Interactive console to explore this portfolio using commands.
+  </p>
+  <div class="terminal-box">
+    <div id="output"></div>
+    <div class="input-line">
+      <span>&gt;</span>
+      <input type="text" id="commandInput" autocomplete="off" />
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>&gt; contact</h2>
+
+  <!-- Contact info with icons -->
+  <div class="contact-info">
+    <p>
+      <strong>Email:</strong> 
+      <a href="mailto:cswithishika07@gmail.com">cswithishika07@gmail.com</a>
+    </p>
+    <p>
+      <strong>GitHub:</strong> 
+      <a href="https://github.com/violetbyte" target="_blank">github.com/violetbyte</a>
+    </p>
+     <p>
+      <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/ishika-v-452709378/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/ishika</a>
+    </p>
+  </div>
+
+  <!-- Optional contact form -->
+  <form class="contact-form" onsubmit="alert('Message sent!'); return false;">
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+<div class="bg-grid"></div>
+<canvas id="lightning"></canvas>
+<script src="script.js"></script>
+
+</body>
+</html>

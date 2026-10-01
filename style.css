@@ -1,0 +1,346 @@
+/* ===========================
+   Reset & Base
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #0b0f14;
+  color: #dbe2f0;
+  line-height: 1.6;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1e2533;
+}
+
+.logo {
+  font-family: "JetBrains Mono", monospace;
+  color: #8fa3ff;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: #aab4d4;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #6cffb2;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 80px 40px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+}
+
+.prompt {
+  color: #6cffb2;
+}
+
+.subtitle {
+  color: #8fa3ff;
+  margin: 10px 0;
+}
+
+.tagline {
+  color: #9aa4bf;
+}
+
+.hero-image {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===========================
+   Sections
+=========================== */
+section {
+  padding: 70px 40px;
+}
+
+section h2 {
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 18px;
+}
+
+/* ===========================
+   Projects (BIGGER CARDS)
+=========================== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+.project-card {
+  background: #111827;
+  border: 1px solid #1e2533;
+  padding: 28px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #6cffb2;
+  box-shadow: 0 0 0 1px rgba(108,255,178,0.35);
+}
+
+.project-card h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.short {
+  color: #9aa4bf;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+/* DETAILS ALWAYS VISIBLE */
+.details {
+  display: block;
+  font-size: 14px;
+  color: #9aa4bf;
+}
+
+.details ul {
+  margin: 12px 0;
+  padding-left: 18px;
+}
+
+.tech {
+  color: #6cffb2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  display: block;
+  margin-top: 12px;
+}
+
+/* ===========================
+   Terminal
+=========================== */
+.terminal-box {
+  background: #020617;
+  border: 1px solid #1e2533;
+  padding: 18px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+#output {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.input-line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: #dbe2f0;
+  outline: none;
+  flex: 1;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+/* ===========================
+   Background Grid
+=========================== */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(#111827 1px, transparent 1px),
+    linear-gradient(90deg, #111827 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -3;
+}
+
+/* ===========================
+   Cursor Lightning Canvas
+=========================== */
+#lightning {
+    display: none;
+}
+/* ===========================
+   Skills Section
+=========================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-block {
+  background: #111827;
+  border: 1px solid #1e2533;
+  padding: 16px;
+}
+
+.skill-block h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #8fa3ff;
+  margin-bottom: 6px;
+}
+
+.skill-block p {
+  font-size: 14px;
+  color: #9aa4bf;
+}
+
+/* ===========================
+   Resume Button
+=========================== */
+.resume-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 14px;
+  border: 1px solid #1e2533;
+  color: #6cffb2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  background: #020617;
+}
+.philosophy-text {
+  font-family: "JetBrains Mono", monospace;
+  color: #9aa4bf;
+  line-height: 1.9;
+}
+/* ===========================
+   Timeline (Slider)
+=========================== */
+.timeline-box {
+  background: #020617;
+  border: 1px solid #1e2533;
+  padding: 20px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.timeline-box input[type="range"] {
+  width: 100%;
+  margin: 16px 0;
+  appearance: none;
+  height: 2px;
+  background: #1e2533;
+  outline: none;
+}
+
+.timeline-box input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6cffb2;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(108,255,178,0.8);
+}
+
+.timeline-output {
+  color: #9aa4bf;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: #111827;
+  border: 1px solid #1e2533;
+  padding: 20px;
+  border-radius: 8px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 0 25px rgba(88, 166, 255, 0.15);
+}
+
+.project-preview {
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #1e2533;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-preview img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-preview:hover img {
+  transform: scale(1.05);
+}
+
+.details {
+  margin-top: 12px;
+  color: #9aa4bf;
+  font-size: 14px;
+}
+
+.details ul {
+  margin: 8px 0 0 16px;
+}
+
+.tech {
+  color: #6cffb2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
